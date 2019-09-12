@@ -1,5 +1,11 @@
 import { Component } from '@angular/core';
 
+/** 
+ * @author Larissa Oliveira
+ * @exercise HelloWorld
+ * @date 09-12-2019
+ **/
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,5 +21,6 @@ export class AppComponent {
     console.log(`This is my component's TS file. My name is ${this.name}`);
   }
 }
+
 
 
