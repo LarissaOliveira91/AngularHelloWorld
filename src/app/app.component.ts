@@ -16,22 +16,22 @@ export class AppComponent {
   title = 'Hello World from WMAD Class 2020';
   name = 'Larissa';
   courseName = 'Alt Web - Angular';
-  myCollection=[3, 4, 5, 6, 7, 8, 9, 10];
+  myCollection = [3, 4, 5, 6, 7, 8, 9, 10];
   count = '';
-  students=['Camille', 'Kevin', 'Roman'];
+  students = ['Camille', 'Kevin', 'Roman'];
 
-  constructor(){
+  constructor() {
     this.courseName = "Angular 8";
     console.log(`This is my component's TS file. My name is ${this.name}`);
     this.loopCount();
   }
 
   loopCount() {
-    for(let i = 0; i < this.myCollection.length; i++) {
+    for (let i = 0; i < this.myCollection.length; i++) {
       this.count += this.myCollection[i] + ' ';
     }
 
-    this.myCollection.forEach(n  => {this.count = this.count + ' ' + n});
+    this.myCollection.forEach(n => { this.count = this.count + ' ' + n });
   }
 }
 
